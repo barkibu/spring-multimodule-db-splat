@@ -15,11 +15,4 @@
 
 	<name>data-entry</name>
 	<description>Data Entry module</description>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
-	</dependencies>
 </project>

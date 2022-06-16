@@ -1,4 +1,4 @@
-package com.barkibu.api
+package com.barkibu.dataentry
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class DataEntryApplication
 
 fun main(args: Array<String>) {
-    runApplication<ApiApplication>(*args)
+    runApplication<DataEntryApplication>(*args)
 }

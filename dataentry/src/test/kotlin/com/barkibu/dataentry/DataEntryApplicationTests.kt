@@ -1,10 +1,10 @@
-package com.barkibu.api
+package com.barkibu.dataentry
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class ApiApplicationTests {
+class DataEntryApplicationTests {
 
     @Test
     fun contextLoads() {

@@ -1,0 +1,16 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    restart: on-failure
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: db_user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
