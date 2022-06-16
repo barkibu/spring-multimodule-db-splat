@@ -1,0 +1,1 @@
+# spring-multimodule-db-splat
