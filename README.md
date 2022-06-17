@@ -61,7 +61,7 @@ class User(
 ) 
 ```
 
-Launch the migration generation:
+Generating a change set:
 
 ```bash
 make makeMigration MIGRATION_LABEL=add_user_table MODULE=api
@@ -70,3 +70,17 @@ make makeMigration MIGRATION_LABEL=add_user_table MODULE=api
 This will generate
 a [changelog in the api module](api/src/main/resources/db/changelog/migrations/20220617124453-add_user_table.yaml) with
 the associated change set detected.
+
+### Launching the Spring Boot Application
+
+In this example the Api module depends on the dataentry module. The launchable jar that we want to run and for which we
+want the migration run is the one build in api/target.
+
+As each module register the migration to the same classpath (db/changelog/migrations) the resulting jar contains all the
+migration required for our database, we can check this by launching the package:
+
+```bash
+java -jar api/target/api-0.0.1-SNAPSHOT.jar
+```
+
+![Jar launching each migrations](docs/JAR_LAUNCHING_ALL_MIGRATIONS.png)

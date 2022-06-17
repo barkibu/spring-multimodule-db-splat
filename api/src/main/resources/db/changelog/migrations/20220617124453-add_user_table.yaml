@@ -1,13 +1,5 @@
 databaseChangeLog:
 - changeSet:
-    id: 1655462704190-1
-    author: lfigea (generated)
-    changes:
-    - createSequence:
-        incrementBy: 1
-        sequenceName: hibernate_sequence
-        startValue: 1
-- changeSet:
     id: 1655462704190-2
     author: lfigea (generated)
     changes:
