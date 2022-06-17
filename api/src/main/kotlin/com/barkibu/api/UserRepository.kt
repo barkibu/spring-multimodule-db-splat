@@ -2,4 +2,4 @@ package com.barkibu.api
 
 import org.springframework.data.repository.CrudRepository
 
-interface UserRepository: CrudRepository<User, Int>
+interface UserRepository

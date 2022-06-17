@@ -1,0 +1,28 @@
+databaseChangeLog:
+- changeSet:
+    id: 1655462716521-1
+    author: lfigea (generated)
+    changes:
+    - createSequence:
+        incrementBy: 1
+        sequenceName: hibernate_sequence
+        startValue: 1
+- changeSet:
+    id: 1655462716521-2
+    author: lfigea (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: incidentPK
+            name: id
+            type: INTEGER
+        - column:
+            name: date
+            type: TIMESTAMP WITHOUT TIME ZONE
+        tableName: incident
+

@@ -4,4 +4,3 @@ databaseChangeLog:
       relativeToChangelogFile: true
       errorIfMissingOrEmpty: false
       context: main
-00
